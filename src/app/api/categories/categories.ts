@@ -1,6 +1,4 @@
-import { NextResponse } from "next/server";
-
-const categories = [
+export const categories = [
     {"id": 0, "name": "Beef"},
     {"id": 1, "name": "Coffee - Tea - Juice"},
     {"id": 2, "name": "Bread"},
@@ -24,14 +22,3 @@ const categories = [
     {"id": 20, "name": "Vegan - Vegetarian"},
     {"id": 21, "name": "Japanese"}
   ];
-  
-  
-export async function GET(){
-    try {
-        return NextResponse.json(categories);
-    } catch(error){
-        return NextResponse.json(error,{status: 500});
-    }
-}
-
-

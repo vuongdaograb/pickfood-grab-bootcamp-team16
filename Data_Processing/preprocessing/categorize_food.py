@@ -45,7 +45,7 @@ if __name__ == "__main__":
         for item in items:
             item = normalize_text(item)
             food_name.add(item)
-    dishes = getDishes("../CleanData_1/dish_names.txt")
+    dishes = getDishes("dish_names.txt")
     categories2Index = {}
     with open("categories.txt","w",encoding='utf-8') as file:
         for i, category in enumerate(categories):

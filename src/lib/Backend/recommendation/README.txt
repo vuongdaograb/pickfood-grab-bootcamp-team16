@@ -1,1 +1,0 @@
-when update dish in database, update combine_dish.txt, dish_categories.json
